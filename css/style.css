@@ -1,0 +1,350 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+}
+
+        /* navbar style stard */
+
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: rgb(248, 247, 247);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 50px;
+
+}     
+
+nav .logu img{
+    width: 200px;
+    height: auto;
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    margin-left: 15px;
+}
+nav ul li a{
+
+    color: rgb(12, 11, 11);
+}
+
+.login{
+    /* border: 2px solid black; */
+    padding: 4px 8px;
+    /* box-shadow:  0px 0px 5px 5px rgba(143,136,136,0.75); */
+    border-radius: 14px;
+    
+}
+.sign_in{
+    /* border: 2px solid black; */
+    padding: 8px 16px;
+    /* box-shadow:  0px 0px 5px 5px rgba(143,136,136,0.75); */
+    border-radius: 14px;
+    color: wheat;
+    background-color: #E3173E;
+}
+
+#check{
+    display: none;
+}
+.bar-btn{
+    display: none;
+}
+
+ /* navbar style End */
+
+         /* banner style stard */
+.banner .banner_img img{
+    width: 100%;
+    height:auto;
+}
+.banner{
+    background-image: url(/images/bannerbackground.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner_info h1{
+   font-size:60px;
+   font-weight: bold;
+   margin-bottom: 20px;
+    
+}
+.banner_search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.banner_search input{
+    padding: 10px 350px 10px 10px ;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+}
+.banner_search button{
+    padding: 10px 20px;
+    outline: none;
+    border: none;
+    border-radius: 20px;
+    color: wheat;
+    background-color: #E3173E;
+}
+
+        /* banner style End */
+
+        /* food menu style stard */
+
+.food_menu{
+    display: flex;
+    justify-content: center;
+    margin: 50px 0;
+
+}
+.food_menu a{
+    margin-left: 100px;
+    color: black;
+    font-weight: bold;
+    /* border-bottom: 2px fuchsia solid; */
+}
+
+.food_menu a:hover{
+    border-bottom: 10px #E3173E solid;
+    border-radius: 10px;
+    color:#E3173E ;
+    padding: 5px;
+    transition: .5s;
+}
+
+.food-all-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,20rem));
+    justify-content: center;
+    grid-gap: 20px;
+
+}
+
+.food_card{
+    width: 260px ;
+    height: auto;
+    /* border: 2px solid red; */
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #f5f8fc;
+    z-index: 0;
+    transition: 0.3s all;
+    border-radius: 5px;
+    padding: 10px;
+    margin-bottom: 40px;
+}
+.food_card:hover{
+    z-index: 1;
+    transform: scale(1.05);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 2);
+}
+
+.food_card img{
+    width: 100%;
+    height: auto;
+}
+.food_card .food_info{
+    text-align: center;
+}
+.food_card p{
+    margin: 10px 0;
+    color: rgb(177, 161, 161);
+}
+
+    /* food menu style End */
+
+/* checkout_food_button style */
+
+.buy_button{
+    margin: 50px 0;
+    text-align: center;
+}
+.buy_button button{
+    padding: 10px 50px;
+    border-radius: 5px;
+    border: none;
+    outline: none;
+    color: white;
+    background-color: #CECECE;
+}
+            /* End */
+
+            /* resturant to customar card and information style  */
+.rtc_info{
+    margin: 50px 0px 50px 130px;
+}
+
+.rtc_info p{
+    margin: 20px 0;
+    color: rgb(161, 153, 153);
+}
+
+.rtc-all-card{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,20rem));
+    justify-content: center;
+    grid-gap: 60px;
+}
+
+.rtc_card{
+    width: 340px ;
+    height: auto;
+    /* border: 2px solid red; */
+    background-color: #fff;
+    box-shadow: 0 0 0 1px #f5f8fc;
+    z-index: 0;
+    transition: 0.3s all;
+    border-radius: 16px;
+    /* padding: 10px; */
+    margin-bottom: 40px;
+}
+.rtc_card:hover{
+    z-index: 1;
+    transform: scale(1.05);
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 2);
+}
+
+.rtc_card_info{
+    padding: 10px;
+}
+.rtc_card img{
+    width: 100%;
+    height: auto;
+}
+
+.rtc_icon{
+    display: flex;
+}
+.rtc_icon img{
+    width: 40px;
+    height: auto;
+    
+}
+.rtc_card_info p{
+    font-size: small;
+    margin-left: 40px;
+    color: rgb(143, 124, 124);
+}
+
+.rtc_card_info button{
+    padding: 7px 15px;
+    margin-left: 40px;
+    margin-top: 10px;
+    font-weight: bold;
+    color: #5C80F8;
+    border-radius: 5px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 2);
+    outline: none;
+    border: none;
+}
+
+.rtc_card_info button span{
+    color: #19E270;
+} 
+
+            /* rtc end */
+
+            /* fooder style */
+
+.footer{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,20rem));
+    justify-content:space-between;
+    align-items: center;
+    grid-gap: 20px;
+    width: 100%;
+    height: 30vh;
+    background: black;
+    padding: 50px 100px;
+    
+}
+
+.footer .logu img{
+    width: 150px;
+    height: auto;
+
+}
+.footer .list_item{
+    display:flex;
+}
+.footer .list_item-1 ul li{
+    margin-right: 40px;
+    
+}
+.footer li{
+    color: white;
+    font-size: small;
+   
+}
+
+
+
+
+
+
+
+/* ==================================
+   mobail device responsib with media@ 
+    ================================*/
+@media(max-width:960px){
+    nav ul{
+    position: fixed;
+    top: 80px;
+    left:-100%;
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(59, 61, 61);
+    display: block;
+    text-align: center;
+   transition: all 3s;
+    /* flex-direction: column; */
+    }
+    nav ul li{
+        margin-top: 30px;
+    }
+    nav ul li a{
+        color: white;
+    }
+    .bar-btn{
+        display: block;
+       
+    
+    }
+    #check:checked~ul{
+        left: 0;
+    }
+
+    .banner_info h1{
+        font-size:30px;
+        text-align: center;
+    }
+    .banner_search{
+        display: grid;
+        grid-template-columns: repeat(auto-fit(200px,20rem));
+    }
+    
+    .banner_search input{
+        margin-bottom: 10px;
+    }
+    .banner{
+    background-image: url(/images/bannerbackground.png);
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    }
+}
