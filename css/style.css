@@ -338,6 +338,9 @@ nav ul li a{
     .banner_search input{
         margin-bottom: 10px;
     }
+    .banner_search input{
+        padding:10px 50px;
+    }
     .banner{
     background-image: url(../images/backgroun-img.png);
     width: 100%;
@@ -347,4 +350,6 @@ nav ul li a{
     align-items: center;
 
     }
+
+
 }
